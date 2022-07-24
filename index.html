@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"><link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+    <style>
+        .main_img_container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section style="background-color:rgb(237, 221, 241);padding-top: 3px;padding-bottom: 30px;">
+        <h2 style="text-align:center"> 수민 &hearts; 범석</h2>
+        <div class="main_img_container">
+            <img src="./images/main_picture.jpg" width="500">
+        </div>
+    </section>
+
+    <div style="text-align:center" class="thankyou_greeting">
+        <h2>감사의 말씀</h2>
+        그동안 이 청첩장을 기다려 왔던 분들이 많을 것 같습니다.<br>
+        저희 사랑을 응원해 주시고 예쁘게 봐주신 덕분에<br>
+        좋은 소식을 전합니다.<br><br>
+        둘의 사랑이 결실을 맺어 부부가 되기까지 <br>
+        다툼의 끝에는 친구들의 위로가<br>
+        화해의 용기에는 부모님의 지혜가<br>
+        있었기에, 8년이라는 시간 동안<br>
+        마음 변치 않고 행복할 수 있었습니다.<br><br>
+        이제 평생 서로에게 힘이 되어주며 사랑을 잃지 않는 동반자가 되자는 약속을 하려고 합니다.<br><br>
+        그 기쁨의 자리를 축복으로 더욱더 빛내주세요.<br>
+        귀한 걸음, 격려해 주시는 마음 잊지 않고 소중히 간직하여 잘 살겠습니다.<br><br><br>
+    </div>
+
+    <p style="text-align:center">
+        박전용 김미자 의 둘째 수민<br>
+        권시관 김영숙 의 막내 범석<br>
+    </p>
+
+    <p style="text-align:center">
+        2022년 11월 13일 일요일 오후 3시 30분<br>
+        구로 지타워 컨벤션
+    </p>
+
+    <div style="background-color:rgb(237, 221, 241);padding-top: 3px;padding-bottom: 30px;">
+        <h2 style="text-align:center">Photo Gallery</h2>
+        <div class="container" style="text-align:center" width="500">
+            <div class="images">
+                <div class="imageFlex1">
+                    <a target="_blank" href="./images/1.jpg">
+                        <img src="./images/1.jpg">
+                    </a>
+                    <img src="./images/2.jpg">
+                    <img src="./images/3.jpg">
+                </div>
+            </div>
+            <div class="images">
+                <div class="imageFlex2">
+                    <img src="./images/4.jpg">
+                    <img src="./images/5.jpg">
+                    <img src="./images/6.jpg">
+                </div>
+            </div>
+            <div class="images">
+                <div class="imageFlex3">
+                    <img src="./images/7.jpg">
+                    <img src="./images/8.jpg">
+                    <img src="./images/9.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 이미지 갤러리 방법2 -->
+    <!-- <div class="gal_container">
+        <div class="gallery">
+            <a target="_blank" href="./images/1.jpg">
+                <img src="./images/1.jpg">
+            </a>
+        </div>
+        
+        <div class="gallery">
+            <a target="_blank" href="./images/2.jpg">
+                <img src="./images/2.jpg">
+            </a>
+        </div>
+    </div> -->
+
+    <div class="roadmap">
+        <h2>오시는 길</h2>
+        네이버 지도
+    </div>
+
+    <hr>
+    <div class="congratulate">
+        <h2>축하 인사</h2>
+        결혼 축하드려요
+    </div>
+
+    <hr>
+    <div class="account">
+        <a href="http://kko.to/0dMUEgwbA" >
+            신랑 계좌
+            <img src="./images/btn_send_tiny.png">
+        </a>
+        <span class="btn_copy">
+            <button onclick="copyIOS('신랑게좌제발')"><img src="./images/copy.png" alt="복사하기">
+            </button>
+        </span>
+    </div>
+    <div class="account">
+        <a href="http://kko.to/EZGvMnzs0">
+            신부 계좌
+            <img src="./images/btn_send_tiny.png">
+        </a>
+        <span class="btn_copy">
+            <button onclick="copyIOS('신부게좌제발')"><img src="./images/copy.png" alt="복사하기">
+            </button>
+        </span>
+    </div>
+    
+    <script>
+        function copyIOS(string){
+            var textarea = document.createElement('textarea');
+            textarea.value = string;
+            
+            document.body.appendChild(textarea);
+            textarea.select();
+            textarea.setSelectionRange(0, 9999);  // 추가
+            
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            alert('복사되었습니다, 감사합니다.');
+        }
+    </script>
+
+</body>
+</html>
