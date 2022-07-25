@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css"><link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
     <style>
         .main_img_container {
@@ -40,10 +40,14 @@
         권시관 김영숙 의 막내 범석<br>
     </p>
 
+    <hr>
+    <p id="dday" style="text-align:center"></p>
+
     <p style="text-align:center">
         2022년 11월 13일 일요일 오후 3시 30분<br>
         구로 지타워 컨벤션
     </p>
+    <script src="./src/dday.js"></script>
 
     <div style="background-color:rgb(237, 221, 241);padding-top: 3px;padding-bottom: 30px;">
         <h2 style="text-align:center">Photo Gallery</h2>
@@ -93,10 +97,21 @@
         <h2>오시는 길</h2>
         네이버 지도
     </div>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=rjkgugagib"></script>
+    <!-- 기본 지도 -->
+    <div id="map" style="width:100%;height:400px;"></div>
+    <script>
+    var mapOptions = {
+        center: new naver.maps.LatLng(37.4796, 126.8955),
+        zoom: 17
+    };
+
+    var map = new naver.maps.Map('map', mapOptions);
+    </script>
 
     <hr>
     <div class="congratulate">
-        <h2>축하 인사</h2>
+        <h2>방명록</h2>
         결혼 축하드려요
     </div>
 
