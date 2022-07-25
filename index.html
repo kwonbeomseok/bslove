@@ -107,6 +107,18 @@
     };
 
     var map = new naver.maps.Map('map', mapOptions);
+
+    // <!-- 마커 -->
+    var map = new naver.maps.Map('map', {
+        center: new naver.maps.LatLng(35.17982543369992, 129.07499499992576),
+        zoom: 17
+    });
+
+    var marker = new naver.maps.Marker({
+        position: new naver.maps.LatLng(35.17982543369992, 129.07499499992576),
+        map: map
+    });
+    
     </script>
 
     <hr>
