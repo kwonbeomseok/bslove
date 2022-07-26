@@ -14,3 +14,4 @@ function diffDay() {
 }
 diffDay()
 setInterval(diffDay, 1000);
+
